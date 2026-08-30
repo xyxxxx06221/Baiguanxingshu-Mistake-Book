@@ -1,0 +1,28 @@
+.DS_Store
+.pnpm-store/
+
+# Local editor and OS files
+.idea/
+.vscode/
+*.swp
+
+# Application dependencies and generated output
+app/node_modules/
+app/.next/
+app/.vinext/
+app/.wrangler/
+app/dist/
+app/release/
+app/desktop/main.mjs
+app/tsconfig.tsbuildinfo
+
+# Local data and secrets
+app/.env*
+!app/.env.example
+app/data/
+app/uploads/
+app/backups/
+*.log
+*.db
+*.db-shm
+*.db-wal

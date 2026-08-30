@@ -1,0 +1,32 @@
+name: 问题报告
+description: 报告可重复的软件问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 请先删除 API Key、个人备份和题卷中的隐私内容。
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 你原本想完成什么，实际发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重现步骤
+      placeholder: "1. 打开……\n2. 点击……\n3. 看到……"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境
+      placeholder: macOS 版本、浏览器或桌面版、Node.js 版本
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图（可选）
+      description: 上传前请确认已遮盖凭证、题目版权内容和个人信息。

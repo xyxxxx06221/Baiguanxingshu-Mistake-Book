@@ -1,0 +1,64 @@
+/* Practice answer states live here so theme files cannot reorder interaction feedback. */
+.options button,.group-options button{
+  overflow:hidden;
+  border:0;
+  border-radius:16px;
+  background:#f4f5f7;
+  color:#252529;
+  box-shadow:0 6px 18px rgba(35,38,46,.055);
+  transition:transform 140ms var(--ease-out),background-color 170ms ease,color 170ms ease,box-shadow 170ms ease;
+}
+.options button b,.group-options button b{
+  background:#e3e4e8;
+  color:#55565c;
+  transition:background-color 170ms ease,color 170ms ease;
+}
+.options button.chosen,.group-options button.chosen{
+  background:#e2e6e9;
+  color:#202124;
+  box-shadow:0 0 0 2px rgba(69,75,82,.2),0 8px 22px rgba(35,38,46,.08);
+}
+.options button.chosen b,.group-options button.chosen b{background:#cfd5da;color:#292b2e}
+.options button.correct,.group-options button.correct,
+.options button.correct.chosen,.group-options button.correct.chosen{
+  background:#dff3e7;
+  color:#17603d;
+  box-shadow:0 0 0 2px rgba(50,139,91,.16),0 8px 22px rgba(30,100,67,.08);
+}
+.options button.correct b,.group-options button.correct b{background:#bee5ce;color:#155b39}
+.options button.wrong,.group-options button.wrong,
+.options button.wrong.chosen,.group-options button.wrong.chosen{
+  background:#f8dfdd;
+  color:#812d27;
+  box-shadow:0 0 0 2px rgba(181,74,69,.14),0 8px 22px rgba(130,45,39,.07);
+}
+.options button.wrong b,.group-options button.wrong b{background:#edc2bf;color:#812d27}
+.options button:disabled,.group-options button:disabled{cursor:default;opacity:1}
+
+@media (hover:hover) and (pointer:fine){
+  .options button:not(.chosen):not(.correct):not(.wrong):not(:disabled):hover,
+  .group-options button:not(.chosen):not(.correct):not(.wrong):not(:disabled):hover{
+    background:#fff;
+    box-shadow:0 10px 24px rgba(35,38,46,.1);
+    transform:translateY(-1px);
+  }
+  .options button:not(:disabled):active,.group-options button:not(:disabled):active{transform:scale(.98)}
+}
+
+.correct-summary{margin-top:20px;color:#17603d}
+.correct-summary>strong,.group-success{display:block;padding:14px 16px;border-radius:14px;background:#dff3e7;color:#17603d;font-size:14px}
+.correct-summary .practice-actions{margin-top:14px}
+.group-success{margin-top:18px}
+
+.question-visuals figure{overflow:hidden;padding:0;background:transparent;box-shadow:none}
+.question-image{border-radius:12px;background:#fff;box-shadow:0 0 0 1px rgba(60,64,72,.08)}
+.visual-fallback{margin-top:10px;border-top:1px solid rgba(60,64,72,.1);padding-top:8px}
+.visual-fallback summary{cursor:pointer;color:#66706c;font-size:12px}
+.visual-fallback .question-image{margin-top:10px}
+.material-practice>aside>.markable{margin:12px 0 20px}
+.material-practice>aside>.question-visuals{margin-top:18px}
+
+@media(prefers-reduced-motion:reduce){
+  .options button,.group-options button{transition:background-color 120ms ease,color 120ms ease,box-shadow 120ms ease}
+  .options button:active,.group-options button:active{transform:none}
+}

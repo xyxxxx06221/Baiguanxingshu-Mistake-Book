@@ -1,0 +1,39 @@
+{
+  "name": "baiguan-xingshu-desktop",
+  "productName": "百官行述",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "type": "module",
+  "main": "main.mjs",
+  "build": {
+    "appId": "cn.baiguan.xingshu",
+    "productName": "百官行述",
+    "electronVersion": "44.0.0",
+    "asar": true,
+    "directories": {
+      "output": "../release"
+    },
+    "files": [
+      "main.mjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../dist",
+        "to": "dist"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "../public/baiguan-seal-logo.png",
+      "target": [
+        "dir",
+        "dmg"
+      ]
+    },
+    "dmg": {
+      "title": "百官行述 ${version}"
+    }
+  }
+}
