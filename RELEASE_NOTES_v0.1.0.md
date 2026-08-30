@@ -4,7 +4,7 @@
 
 ## 下载
 
-从 GitHub Releases 下载 `百官行述-v0.1.0-mac-arm64.zip`，解压后在 Finder 中右键应用并选择“打开”。应用使用本机临时签名，尚未经过 Apple 开发者签名与公证。
+从 GitHub Releases 下载 `Baiguanxingshu-v0.1.0-mac-arm64.zip`，解压后在 Finder 中右键应用并选择“打开”。应用使用本机临时签名，尚未经过 Apple 开发者签名与公证。
 
 ## 主要功能
 

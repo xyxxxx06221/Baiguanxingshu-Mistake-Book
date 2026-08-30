@@ -22,7 +22,7 @@
 
 ### 普通用户
 
-Apple Silicon Mac 用户可在 GitHub 仓库右侧的 **Releases** 下载 `百官行述-v0.1.0-mac-arm64.zip`，解压后双击应用。当前应用使用本机临时签名，尚未经过 Apple 公证；首次打开时可能需要在 Finder 中右键应用并选择“打开”。
+Apple Silicon Mac 用户可在 GitHub 仓库右侧的 **Releases** 下载 `Baiguanxingshu-v0.1.0-mac-arm64.zip`，解压后双击应用。当前应用使用本机临时签名，尚未经过 Apple 公证；首次打开时可能需要在 Finder 中右键应用并选择“打开”。
 
 只想查看或修改源码的用户，可以点击仓库页面的 **Code → Download ZIP**。
 
