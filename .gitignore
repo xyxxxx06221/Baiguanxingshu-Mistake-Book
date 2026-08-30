@@ -1,5 +1,6 @@
 .DS_Store
 .pnpm-store/
+本地备份/
 
 # Local editor and OS files
 .idea/
