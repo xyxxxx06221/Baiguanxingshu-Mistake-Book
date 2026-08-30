@@ -13,4 +13,4 @@ fi
 if [ ! -d node_modules ]; then
   pnpm install
 fi
-pnpm run dev
+./node_modules/.bin/vinext dev
